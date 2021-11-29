@@ -12,7 +12,8 @@ function balloon(t){
   let h = textAscent() + textDescent();
   let p = 2;
   fill(0);
-  rect(0, 0, w + p * 2, h + p * 2);
+  ellipse(w / 2 + 2 * p, h / 2 + 4 * p, w + 4 * p, h + 4 * p);
+  triangle(w + 4 * p / 5, h + 4 * p / 5, w / 4, w / 4, w + 4 * p + p, w / 4);
   fill(255);
   text(t, p, h + p);
 }
